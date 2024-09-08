@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Journey in UI/UX & Frontend Development</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="menu-container" id="menu-container">
+        <span class="material-symbols-outlined">menu</span>
+        <span class="menu-text">Menu</span>
+      </div>
+    </nav>
+
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <h1>A Journey in UI/UX & Frontend Development</h1>
+    <div class="search-container">
+      <form action="url_para_onde_os_dados_serao_enviados" method="post">
+        <label for="search">Pesquisar:</label>
+        <input type="text" id="search" name="search" placeholder="Digite sua busca">
+        <button type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </header>
+  <main  class="content-padding">
+    <article class="caixa-transparente">
+      <div class="conteudo-descricao">
+        <h2 class=""item-resultado align-right"">Sobre mim</h2>
+        <h3 class="align-right">Olá, eu sou a Letícia</h3>
+        <p class="descricao-meta">
+          Entusiasta de UX/UI design e product design, sou movida pela curiosidade e pela busca contínua em entender como as pessoas interagem com produtos digitais. Graduada em Design de Ambientes pela Universidade Estadual de Minas Gerais, desde novembro de 2021 estou intensamente dedicada a cursos de UX/UI, aprimorando minhas habilidades e conhecimentos nessa área que tanto me encanta.
+        </p>
+        <ul class="descricao-meta">
+          <li>Pesquisa e análise de dados: Utilizei insights para fundamentar decisões de design.</li>
+          <li>Criação e manutenção de um Design System: Assegurando consistência e eficiência nos projetos.</li>
+          <li>Desenvolvimento de interfaces e componentes do style guide: Garantindo uma experiência coesa e intuitiva.</li>
+          <li>Condução de design reviews: Mantendo a qualidade dos projetos da equipe.</li>
+        </ul>
+        <p class="descricao-meta">
+          Minhas competências incluem a compreensão e implementação de regras de negócio complexas, análise de negócios e criação de interfaces intuitivas e acessíveis. Estou dedicada a criar experiências digitais que são não apenas funcionais, mas também visualmente atraentes, proporcionando uma usabilidade excepcional para todos os usuários.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>2024 - Todos os direitos reservados®</p>
+    <p>Entre em contato com <a href="mailto:legiostridesign@gmail.com">legiostridesign@gmail.com</a></p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('#menu-container').addEventListener('click', function() {
+        document.querySelector('#sidebar').classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
